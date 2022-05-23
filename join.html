@@ -14,7 +14,7 @@
 
 <body>
   <!-- 로그인 페이지 -->
-  <div id="wrap" class="corpus-login">
+  <div id="wrap" class="corpus-join">
     <header>
       <div class="header-inner">
         <h1 class="logo"><img src="./src/img/logo.svg" alt="국립국어원 로고"></h1>
@@ -24,24 +24,27 @@
     <div id="main">
       <section class="section-page-top">
         <div class="section-inner">
-          <h2 class="page-title">참여자 로그인</h2>
+          <h2 class="page-title">가입 정보 입력</h2>
         </div>
       </section>
 
       <section class="section-page-content">
         <div class="section-inner">
-          <div class="section-content section-login">
+          <div class="section-content section-join">
 
-            <!-- 로그인 폼 -->
+            <!-- 가입 정보 입력 폼 -->
             <div class="login-form">
               <form name="loginForm" action="">
                 <fieldset>
-                  <legend class="blind">로그인 폼</legend>
+                  <legend class="blind">가입 정보 입력 폼</legend>
                   <div class="input-wrap">
-                    <label class="input-label label-usr-name">
-                      <input type="text" placeholder="성명">
-                      <span class="icon-usr"></span>
-                      <!-- <span class="label-text usr-name">성명</span> -->
+                    <label class="input-label label-join-name">
+                      <span class="label-text label-name">이름</span>
+                      <input type="text" placeholder="이름을 입력해주세요.">
+                    </label>
+                    <label class="input-label label-join-birth-year">
+                      <span class="label-text label-birth-year">출생년도</span>
+                      <input type="number">
                     </label>
                     <label class="input-label label-usr-hpnum">
                       <input type="tel" placeholder="휴대폰 번호">
@@ -49,13 +52,14 @@
                     <label class="input-label label-usr-password">
                       <input type="password" placeholder="비밀번호">
                     </label>
+
                   </div>
                   <div class="login-option-wrap">
                     <p class="login-option option-find-pw">
                       <a href="#">비밀번호 찾기</a>
                     </p>
                     <p class="login-option option-join-us">
-                      <a href="./join.html">가입하기</a>
+                      <a href="#">가입하기</a>
                     </p>
                   </div>
                   <div class="btn-wrap login-btn-wrap">
