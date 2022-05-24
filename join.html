@@ -46,24 +46,28 @@
                       <span class="label-text label-birth-year">출생년도</span>
                       <input type="number">
                     </label>
-                    <label class="input-label label-usr-hpnum">
+                    <select name="userGender" id="userGender">
+                      <option value="">성별</option>
+                      <option value="male">남자</option>
+                      <option value="female">여자</option>
+                    </select>
+                    <label class="input-label label-join-hpnum">
+                      <span class="label-text label-hpnum">휴대폰 번호</span>
                       <input type="tel" placeholder="휴대폰 번호">
+                      <span class="label-info"><em>기재하신 번호로 참여 확인 및 카카오톡 메세지가 발송되오니, 정확한 휴대폰 번호를 기재해 주십시오.</em></span>
                     </label>
-                    <label class="input-label label-usr-password">
+                    <label class="input-label label-join-pw">
+                      <span class="label-text label-pw">비밀번호 4자리를 입력해주세요.</span>
                       <input type="password" placeholder="비밀번호">
                     </label>
+                    <label class="input-label label-join-recommend">
+                      <span class="label-text label-recommend">추천인 코드(해당자만 기재)</span>
+                      <input type="text">
+                    </label>
+                  </div>
 
-                  </div>
-                  <div class="login-option-wrap">
-                    <p class="login-option option-find-pw">
-                      <a href="#">비밀번호 찾기</a>
-                    </p>
-                    <p class="login-option option-join-us">
-                      <a href="#">가입하기</a>
-                    </p>
-                  </div>
-                  <div class="btn-wrap login-btn-wrap">
-                    <button>로그인</button>
+                  <div class="btn-wrap join-btn-wrap">
+                    <button>가입하기</button>
                   </div>
                 </fieldset>
               </form>
