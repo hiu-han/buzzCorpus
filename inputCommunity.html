@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- <link rel="stylesheet" href="./src/css/reset.css"> -->
+  <link rel="stylesheet" href="./src/css/font.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+  <!-- 정보 입력 페이지_02 직접입력 -->
+  <div id="wrap" class="corpus-input-community">
+    <header>
+      <div class="header-inner">
+        <h1 class="logo"><img src="./src/img/logo.svg" alt="국립국어원 로고"></h1>
+      </div>
+    </header>
+
+    <div id="main">
+      <section class="section-page-top">
+        <div class="section-inner">
+          <h2 class="page-title">커뮤니티 게시글 입력</h2>
+        </div>
+      </section>
+
+      <section class="section-page-content">
+        <div class="section-inner">
+          <div class="section-content section-input-info">
+
+            <div class="info-wrap info-wrap-input-info">
+              <div class="info-wrap-top">
+                <p>참여하실 사이트의 게시글별로 내용을 입력해주십시오.</p>
+              </div>
+
+              <!-- 게시글 입력 -->
+              <div class="input-wrap-content usr-commu-content">
+                <div class="content-inner">
+                  <div class="content-title">
+                    <h3>참여 게시글 등록하기</h3>
+                  </div>
+
+                  <div class="content-box">
+                    <div class="input-info-table">
+                      <table class="table-content">
+                        <tbody>
+                          <tr>
+                            <th>사이트명</th>
+                            <td class="table-input input-commu-name">
+                              <div class="input-wrap input-select-wrap input-select-commu">
+                                <select name="selectCommuName" id="inputSlcCommu">
+                                  <option value="">커뮤니티명</option>
+                                  <option value="dcinside">디시인사이드</option>
+                                  <option value="fmkorea">에펨코리아</option>
+                                  <option value="ppomppu">뽐뿌</option>
+                                  <option value="inven">인벤</option>
+                                  <option value="theqoo">더쿠</option>
+                                  <option value="ruriweb">루리웹</option>
+                                  <option value="mlbpark">엠엘비파크</option>
+                                  <option value="humoruniv">웃긴대학</option>
+                                  <option value="natepann">네이트판</option>
+                                  <option value="bobaedream">보배드림</option>
+                                  <option value="etoland">이토랜드</option>
+                                  <option value="slrclub">SLR클럽</option>
+                                  <option value="82cook">82cook</option>
+                                  <option value="todayhumor">오늘의 유머</option>
+                                  <option value="instiz">인스티즈</option>
+                                  <option value="navercafe">네이버카페</option>
+                                  <option value="daumcafe">다음카페</option>
+                                  <option value="etc">기타(직접 입력)</option>
+                                </select>
+                              </div>
+                              <div class="input-wrap input-text-wrap input-text-commu">
+                                <input type="text" id="inputCommuName" placeholder="커뮤니티의 이름을 입력해주세요.">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>게시글 URL</th>
+                            <td class="table-input input-post-url">
+                              <div class="input-wrap input-text-wrap input-text-post">
+                                <input type="text" id="inputPostUrl" placeholder="해당 게시글의 주소를 입력해주세요.">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>작성자명</th>
+                            <td class="table-input input-usr-name">
+                              <div class="input-wrap input-text-wrap input-text-usr">
+                                <input type="text" id="iputUsrName" placeholder="커뮤니티 내의 작성자명을 입력해주세요.">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>작성일</th>
+                            <td class="table-input input-post-date">
+                              <div class="input-wrap input-date-wrap input-date-post">
+                                <input type="date" id="inputPostDate">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>제목</th>
+                            <td class="table-input input-post-title">
+                              <div class="input-wrap input-text-wrap input-text-title">
+                                <input type="text" id="inputPostTitle" placeholder="제목을 입력해주세요.">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>본문</th>
+                            <td class="table-input input-post-subs">
+                              <div class="input-wrap input-text-wrap input-text-subs">
+                                <input type="text" id="inputPostSubs" placeholder="본문 내용을 입력해주세요.">
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p class="btn-wrap">
+                      <button class="btn btn-input-save">저장</button>
+                      <button class="btn btn-input-cancel">취소</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 입력된 게시글 관리 -->
+              <div class="input-wrap-content usr-commu-content-list">
+                <div class="content-inner">
+                  <div class="content-title">
+                    <h3>참여 게시글 관리</h3>
+                  </div>
+
+                  <div class="content-box">
+                    <div class="input-info-table">
+                      <table class="table-added-list">
+                        <thead>
+                          <tr>
+                            <th>번호</th>
+                            <th>사이트명</th>
+                            <th>게시글URL</th>
+                            <th>작성자명</th>
+                            <th>작성일</th>
+                            <th>제목</th>
+                            <th>본문</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="added-post-num">1</th>
+                            <td class="added-post-commu"></td>
+                            <td class="added-post-url"></td>
+                            <td class="added-post-usr"></td>
+                            <td class="added-post-date"></td>
+                            <td class="added-post-title"></td>
+                            <td class="added-post-subs"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <ul class="pagination-list">
+                        <!-- .page-arrow >> 넘어갈 페이지가 없을 경우 >> addClass '.disable' -->
+                        <li class="page-arrow page-prev disable"><button>
+                            < </button>
+                        </li>
+                        <!-- 현재페이지 >> .page-count >> addClass '.now-on' -->
+                        <li class="page-count now-on"><a href="#">1</a></li>
+                        <!-- <li class="page-count"><a href="#">2</a></li>
+                        <li class="page-count"><a href="#">3</a></li>
+                        <li class="page-count"><a href="#">4</a></li>
+                        <li class="page-count"><a href="#">5</a></li> -->
+                        <li class="page-arrow page-next disable"><button>></button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 페이지 바닥 버튼 랩 -->
+              <div class="btn-wrap page-btn-wrap">
+                <a href="./inputInfo.html" class="btn btn-prev-page">이전 페이지로</a>
+                <a href="./submit.html" class="btn btn-next-page">다음 페이지로</a>
+              </div>
+
+            </div>
+          </div>
+      </section>
+    </div>
+
+    <div id="footer">
+
+    </div>
+  </div>
+
+  <script src="./src/js/include.js"></script>
+
+</body>
+
+</html>

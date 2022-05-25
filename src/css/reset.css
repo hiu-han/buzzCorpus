@@ -152,7 +152,7 @@ button {
 /* input[type="password"],
 input[type="email"],
 input[type="text"],
-input[type="date"], */
+input[type="date"],
 input,
 textarea,
 button {
@@ -162,7 +162,7 @@ button {
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-}
+} */
 select::-ms-expand {
   display: none;
 }
