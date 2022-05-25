@@ -142,7 +142,8 @@ input,
 textarea,
 select,
 button {
-  font-family: "Noto Sans KR", Apple Gothic, "Malgun Gothic", sans-serif;
+  font-family: "Pretendard", "Noto Sans KR", Apple Gothic, "Malgun Gothic",
+    sans-serif;
   font-size: 16px;
   color: #2a2a2a;
   line-height: 1.3;
