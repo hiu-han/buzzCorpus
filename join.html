@@ -40,34 +40,40 @@
                   <div class="input-wrap">
                     <label class="input-label label-join-name">
                       <span class="label-text label-name">이름</span>
-                      <input type="text" placeholder="이름을 입력해주세요.">
+                      <input type="text" placeholder="이름을 입력해 주세요.">
                     </label>
 
                     <label class="input-label label-join-birth-year">
                       <span class="label-text label-birth-year">출생년도</span>
-                      <input type="number">
+                      <input type="text" placeholder="1988">
                     </label>
 
-                    <select name="userGender" id="userGender">
-                      <option value="">성별</option>
-                      <option value="male">남자</option>
-                      <option value="female">여자</option>
-                    </select>
+                    <div class="input-label label-join-gender">
+                      <!-- .input-label로 씌워줌 -->
+                      <select name="userGender" id="userGender">
+                        <option value="">성별</option>
+                        <option value="male">남자</option>
+                        <option value="female">여자</option>
+                      </select>
+                    </div>
 
                     <label class="input-label label-join-hpnum">
                       <span class="label-text label-hpnum">휴대폰 번호</span>
-                      <input type="tel" placeholder="휴대폰 번호">
-                      <span class="label-info"><em>기재하신 번호로 참여 확인 및 카카오톡 메세지가 발송되오니, 정확한 휴대폰 번호를 기재해 주십시오.</em></span>
+                      <input type="tel" placeholder="휴대폰 번호를 입력해 주세요.">
+                      <span class="label-info">
+                        <brㅠㄱ>기재하신 번호로 <strong>참여 확인 및 카카오톡 메세지가 발송</strong>됩니다.</br> <strong>정확한 휴대폰
+                            번호</strong>를 기재해 주세요.</em>
+                      </span>
                     </label>
 
                     <label class="input-label label-join-pw">
-                      <span class="label-text label-pw">비밀번호 4자리를 입력해주세요.</span>
-                      <input type="password" placeholder="비밀번호">
+                      <span class="label-text label-pw">비밀번호</span>
+                      <input type="password" placeholder="비밀번호 4자리를 입력해 주세요.">
                     </label>
 
                     <label class="input-label label-join-recommend">
-                      <span class="label-text label-recommend">추천인 코드(해당자만 기재)</span>
-                      <input type="text">
+                      <span class="label-text label-recommend">추천인 코드 (해당자만 기재)</span>
+                      <input type="text" placeholder="추천인 코드를 입력해 주세요.">
                     </label>
                   </div>
 

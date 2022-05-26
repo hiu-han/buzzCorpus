@@ -34,7 +34,7 @@ button {
 .page-btn-wrap,
 .login-btn-wrap,
 .join-btn-wrap {
-  margin: 30px 0 20px;
+  margin: 40px 0 30px;
   text-align: center;
 }
 .btn-wrap > a,
@@ -51,6 +51,21 @@ button {
 .btn-wrap > .btn:hover,
 .btn-wrap > button:hover {
   background-color: rgb(0, 40, 80);
+}
+
+.input-wrap > label {
+  display: block;
+}
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  border: none;
+  background-color: #f2f5f8;
+  line-height: 44px;
+  font-size: 15px;
+  vertical-align: top;
+  text-indent: 15px;
 }
 
 /** WRAP **/
@@ -92,9 +107,12 @@ h2.page-title {
   width: 100%;
 }
 
-/* index.html */
+/** index.html **/
 .section-greeting {
   padding: 0 40px;
+}
+.section-greeting > .para-wrap-greeting {
+  margin-bottom: 20px;
 }
 
 .section-greeting .para-item {
@@ -106,19 +124,21 @@ h2.page-title {
 
 .info-organization-wrap {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
-  align-items: flex-end;
 }
-.info-organization-wrap .info-wrap-inner {
+.info-organization-wrap > .info-wrap-inner {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: flex-start;
 }
 .info-organization-wrap .info-item {
-  /* display: inline-block; */
+  margin-bottom: 14px;
   text-align: left;
+}
+.info-organization-wrap .info-item:last-child {
+  margin-bottom: 0;
+}
+.info-organization-wrap .info-item-title {
+  margin-right: 6px;
 }
 .info-organization-wrap .info-item-logo {
   vertical-align: middle;
@@ -130,4 +150,126 @@ h2.page-title {
   display: inline-block;
   margin-left: 8px;
   font-size: 14px;
+  color: #666;
+}
+
+/** login.html **/
+.login-form fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-form fieldset > * {
+  width: 40%;
+}
+.login-form label {
+  font-size: 0;
+  height: 44px;
+  margin-bottom: 20px;
+}
+.login-form label:last-child {
+  margin-bottom: 0;
+}
+.login-form label > .input-icon {
+  display: inline-block;
+  width: 38px;
+  height: inherit;
+  margin-right: 12px;
+  vertical-align: top;
+  background-image: url("../img/icon/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.login-form label > .input-icon.icon-hpnum {
+  background-image: url("../img/icon/icon-hp.svg");
+}
+.login-form label > .input-icon.icon-pw {
+  background-image: url("../img/icon/icon-lock.svg");
+}
+
+.login-form label > input {
+  width: calc(100% - 50px);
+  border: none;
+  background-color: #f2f5f8;
+  line-height: 44px;
+  font-size: 15px;
+  vertical-align: top;
+  text-indent: 15px;
+}
+
+.login-option-wrap {
+  margin-top: 14px;
+  text-align: right;
+}
+.login-option-wrap .login-option {
+  display: inline-block;
+  position: relative;
+  padding-left: 16px;
+  margin-left: 15px;
+  font-size: 14px;
+  color: #888;
+}
+.login-option-wrap .login-option::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 48%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 10px;
+  background-color: #ccc;
+}
+.login-option-wrap .login-option:first-child::before {
+  display: none;
+}
+
+/** JOIN.html **/
+.section-join .login-form .input-label {
+  height: auto;
+  font-size: 16px;
+}
+.section-join .login-form .input-label > .label-text {
+  display: inline-block;
+  /* padding-left: 5px; */
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.section-join .login-form .input-label > input {
+  width: 100%;
+}
+.section-join .login-form .input-label > .label-info {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: rgb(228, 117, 100);
+  transition: 0.3s ease-in;
+}
+
+/** FOOTER **/
+.foot-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  font-size: 15px;
+  color: #666;
+}
+.foot-inner > h3 {
+  width: 100px;
+  margin-right: 34px;
+}
+.foot-inner > .contact-wrap > * {
+  display: inline-block;
+  margin-right: 14px;
+}
+.foot-inner > .contact-wrap > *:last-child {
+  margin-right: 0;
+}
+.foot-inner > .contact-wrap > .contact-title {
+  margin-right: 8px;
 }
