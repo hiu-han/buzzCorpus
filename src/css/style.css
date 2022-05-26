@@ -90,7 +90,7 @@ h1.logo {
   padding: 14px 14px 20px;
 }
 .section-page-top {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 h2.page-title {
   font-size: 22px;
@@ -112,7 +112,9 @@ h2.page-title {
   padding: 0 40px;
 }
 .section-greeting > .para-wrap-greeting {
+  padding: 34px 34px 44px;
   margin-bottom: 20px;
+  background-color: #f2f5f8;
 }
 
 .section-greeting .para-item {
@@ -245,8 +247,111 @@ h2.page-title {
   display: inline-block;
   margin-top: 8px;
   font-size: 13px;
-  color: rgb(228, 117, 100);
+  color: rgb(217, 100, 81);
   transition: 0.3s ease-in;
+}
+
+/** PROCESS.html **/
+
+/** ATTENTION.html **/
+.info-wrap-top {
+  margin-bottom: 24px;
+}
+.info-wrap-top .text-attention {
+  margin-left: 70px;
+  color: rgb(217, 100, 81);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.attention-list {
+  padding: 34px 34px 44px;
+  background-color: #f2f5f8;
+}
+.attention-list .content-item {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 4px;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+.attention-list .content-item:last-child {
+  margin-bottom: 0;
+}
+.attention-list .content-item .item-icon {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icon/icon-attention.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.attention-list .content-item .item-subs > em {
+  color: #666;
+}
+
+.info-wrap-bottom {
+  margin-top: 44px;
+}
+.info-wrap-bottom > .input-label {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/** INPUTINFO.html **/
+.input-wrap-content .content-title > h3 {
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(0, 55, 100);
+}
+
+.section-input-info .input-info-list {
+  padding: 14px 34px 24px;
+}
+.section-input-info .input-info-item {
+  margin-bottom: 24px;
+  font-size: 0;
+}
+.section-input-info .input-info-item:last-child {
+  margin-bottom: 0;
+}
+.section-input-info .input-info-item > div {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+}
+.section-input-info .input-info-item > .item-title {
+  width: 25%;
+  line-height: 44px;
+}
+.section-input-info .input-info-item > .input-wrap {
+  width: 75%;
+  /* font-size: 0; */
+}
+
+.section-input-info .input-info-item > .input-wrap > * {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+}
+.section-input-info .input-info-item > .input-wrap > .input-item-url {
+  /* width: 80%; */
+}
+.section-input-info .input-info-item > .input-wrap > .input-item-url input {
+  width: auto;
+}
+.section-input-info .input-info-item > .input-wrap > .input-item-url label {
+  line-height: 44px;
+}
+.section-input-info .input-info-item > .input-wrap > .btn-wrap {
+  /* width: 20%; */
 }
 
 /** FOOTER **/
