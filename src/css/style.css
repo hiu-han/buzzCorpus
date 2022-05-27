@@ -390,6 +390,32 @@ h2.page-title {
   display: block;
 }
 
+/** SUBMIT page **/
+.corpus-submit .info-wrap-top {
+  padding: 34px 54px 44px;
+  margin-bottom: 20px;
+  background-color: #f2f5f8;
+}
+.corpus-submit .info-wrap-top > p {
+  padding: 24px 0 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.corpus-submit .info-wrap-content {
+  padding: 34px 0 24px;
+}
+.corpus-submit .submit-agreement-wrap {
+  text-align: center;
+}
+.corpus-submit .submit-agreement-wrap .label-text {
+  font-size: 18px;
+}
+.corpus-submit .submit-agreement-wrap .end-comment {
+  margin-top: 14px;
+  font-size: 14px;
+  color: rgb(217, 100, 81);
+}
+
 /** FOOTER **/
 .foot-inner {
   display: flex;

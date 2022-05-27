@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- <link rel="stylesheet" href="./src/css/reset.css"> -->
+  <link rel="stylesheet" href="./src/css/font.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+  <!-- 정보 입력 페이지_01 -->
+  <div id="wrap" class="corpus-input-info">
+    <header>
+      <div class="header-inner center">
+        <h1 class="logo"><img src="./src/img/common/logo.svg" alt="국립국어원 로고"></h1>
+      </div>
+    </header>
+
+    <div id="main" class="center">
+      <section class="section-page-top">
+        <div class="section-inner">
+          <h2 class="page-title">계정 정보 입력</h2>
+        </div>
+      </section>
+
+      <section class="section-page-content">
+        <div class="section-inner">
+          <div class="section-content section-input-info">
+
+            <div class="info-wrap info-wrap-input-info">
+              <div class="info-wrap-top">
+                <p>귀하께서 언어 자원 구축 사업에 참여할 SNS 계정 및 카페·커뮤니티 게시글을 모두 기재하여 주십시오.</p>
+                <span class="add-comment">※ 반드시 <strong>본인 명의</strong>로 작성한 계정과 게시글로 참여해주십시오</span>
+              </div>
+
+              <!-- 내 SNS로 참여하기 -->
+              <div class="input-wrap-content usr-sns-content">
+                <div class="content-inner">
+                  <div class="content-title">
+                    <h3>내 SNS로 참여하기</h3>
+                  </div>
+
+                  <div class="content-box">
+                    <ul class="input-info-list">
+                      <!-- 인스타그램 -->
+                      <li class="input-info-item item-instagram">
+                        <div class="item-title">
+                          <p class="item-icon"></p>
+                          <span class="item-text">인스타그램</span>
+                        </div>
+                        <div class="item-input-box">
+                          <div class="input-wrap input-sns-instagram">
+                            <p class="input-item-url sns-instagram-url">
+                              <label class="label-text">www.instagram.com/</label>
+                              <input type="text">
+                            </p>
+                            <div class="btn-wrap add-btn-wrap">
+                              <p class="add-btn">+</p>
+                              <span class="btn-text">참여계정 추가하기</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- 페이스북 -->
+                      <li class="input-info-item item-facebook">
+                        <div class="item-title">
+                          <p class="item-icon"></p>
+                          <span class="item-text">페이스북</span>
+                        </div>
+                        <div class="item-input-box">
+                          <div class="input-wrap input-sns-facebook">
+                            <p class="input-item-url sns-facebook-url">
+                              <label class="label-text">www.facebook.com/</label>
+                              <input type="text">
+                            </p>
+                            <div class="btn-wrap add-btn-wrap">
+                              <p class="add-btn">+</p>
+                              <span class="btn-text">참여계정 추가하기</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- 트위터 -->
+                      <li class="input-info-item item-twitter">
+                        <div class="item-title">
+                          <p class="item-icon"></p>
+                          <span class="item-text">트위터</span>
+                        </div>
+                        <div class="item-input-box">
+                          <div class="input-wrap input-sns-twitter">
+                            <p class="input-item-url sns-twitter-url">
+                              <label class="label-text">twitter.com/</label>
+                              <input type="text">
+                            </p>
+                            <div class="btn-wrap add-btn-wrap">
+                              <p class="add-btn">+</p>
+                              <span class="btn-text">참여계정 추가하기</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- 블로그 -->
+                      <li class="input-info-item item-blog">
+                        <div class="item-title">
+                          <p class="item-icon"></p>
+                          <span class="item-text">블로그</span>
+                        </div>
+                        <div class="item-input-box">
+                          <div class="input-wrap input-blog-naver">
+                            <p class="input-item-url blog-naver-url">
+                              <label class="label-text">blog.naver.com/</label>
+                              <input type="text">
+                            </p>
+                          </div>
+                          <div class="input-wrap input-blog-daum">
+                            <p class="input-item-url blog-daum-url">
+                              <label class="label-text">blog.daum.com/</label>
+                              <input type="text">
+                            </p>
+                          </div>
+                          <div class="input-wrap input-blog-tistory">
+                            <p class="input-item-url blog-tistory-url">
+                              <input type="text">
+                              <label class="label-text">.tistory.com</label>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 가입 중인 카페로 참여하기 -->
+              <div class="input-wrap-content usr-community-content">
+                <div class="content-inner">
+                  <div class="content-title">
+                    <h3>가입 중인 카페로 참여하기</h3>
+                  </div>
+
+                  <div class="content-box">
+                    <ul class="input-info-list">
+                      <li class="input-info-item item-cummunity">
+                        <div class="item-title">
+                          <p class="item-icon"></p>
+                          <span class="item-text">카페</span>
+                        </div>
+                        <div class="item-input-box">
+                          <!-- 네이버카페 -->
+                          <div class="input-wrap input-cafe-naver">
+                            <p class="input-item-url cafe-naver-url">
+                              <span class="input-item-title">네이버카페</span>
+                              <label for="" class="label-text">cafe.naver.com/</label>
+                              <input type="text" id="">
+                            </p>
+                            <p class="input-item-name cafe-naver-name">
+                              <span class="input-item-title">활동명(닉네임)</span>
+                              <label for="" class="">:</label>
+                              <input type="text" id="">
+                            </p>
+                            <div class="btn-wrap add-btn-wrap">
+                              <p class="aadd-btn">+</p>
+                              <span class="btn-text">가입카페 추가하기</span>
+                            </div>
+                            <span class="input-attention">실제로 위의 카페에서 본인이 작성한 글만 검색되는지 반드시 확인하신 후 입력해주세요.</span>
+                          </div>
+                          <!-- 다음카페 -->
+                          <div class="input-wrap input-cafe-daum">
+                            <p class="input-item-url cafe-daum-url">
+                              <span class="input-item-title">다음카페</span>
+                              <label for="" class="label-text">cafe.daum.com/</label>
+                              <input type="text" id="">
+                            </p>
+                            <p class="input-item-name cafe-daum-name">
+                              <span class="input-item-title">활동명(닉네임)</span>
+                              <label for="" class="">:</label>
+                              <input type="text" id="">
+                            </p>
+                            <div class="btn-wrap add-btn-wrap">
+                              <p class="aadd-btn">+</p>
+                              <span class="btn-text">가입카페 추가하기</span>
+                            </div>
+                            <span class="input-attention">실제로 위의 카페에서 본인이 작성한 글만 검색되는지 반드시 확인하신 후 입력해주세요.</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 가입중인 커뮤니티로 참여하기 -->
+              <div class="input-wrap-content usr-community-content">
+                <div class="content-inner">
+                  <div class="content-title">
+                    <h3>가입 중인 커뮤니티로 참여하기</h3>
+                  </div>
+
+                  <div class="content-box">
+                    <ul class="input-info-list">
+                      <li class="input-info-item item-cummunity">
+                        <div class="item-title">
+                          <p class="item-icon"></p>
+                          <span class="item-text">카페·커뮤니티</span>
+                        </div>
+                        <div class="item-input-box">
+                          <!-- 기타 커뮤니티에 관하여 -->
+                          <div class="input-wrap input-community-all">
+                            <span class="input-attention">카페 이외 사이트는 직접 게시글 입력 부탁드립니다.</span>
+                            <p class="text-page-link"><a href="./inputCommunity.html">다른커뮤니티로 참여하기</a></p>
+                            <span class="input-attention">디시인사이드, 에펨코리아, 뽐뿌, 인벤, 더쿠, 루리웹, 엠엘비파크, 웃긴대학, 네이트판, 보배드림, 이토랜트,
+                              SLR클럽, 82cook, 오늘의 유머, 인스티즈 등에 작성하신 게시글을 입력해주세요!</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 이하 기획서에는 다음(게시글직접입력)페이지로 넘어가지만 실제로는 게시글직접입력하지 않고 제출페이지로 갈 경우도 많다. -->
+              <!-- 확인하고 추가하자 -->
+              <!-- <div class="info-wrap-bottom">
+                <label class="input-label">
+                  <span class="label-text">위의 사항을 모두 숙지하였음을 확인합니다.</span>
+                  <input type="checkbox">
+                </label>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- 페이지 바닥 버튼 랩 -->
+          <!-- <div class="btn-wrap page-btn-wrap">
+            <a href="#" class="btn btn-next-page">다음으로 이동</a>
+          </div> -->
+
+        </div>
+      </section>
+    </div>
+
+    <div id="footer"></div>
+
+  </div>
+
+  <script src='./src/js/jquery-3.5.1.js'></script>
+  <script src="./src/js/include.js"></script>
+
+</body>
+
+</html>
