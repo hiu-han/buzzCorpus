@@ -168,10 +168,10 @@ select::-ms-expand {
   display: none;
 }
 select {
-  -o-appearance: none;
+  /* -o-appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  appearance: none; */
 }
 
 button {
