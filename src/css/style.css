@@ -53,13 +53,28 @@ button {
   background-color: rgb(0, 40, 80);
 }
 
+.btn-wrap > button.btn-type02 {
+  background-color: rgb(235, 242, 248);
+  color: rgb(0, 55, 100);
+}
+.btn-wrap > button.btn-type02:hover {
+  background-color: rgb(209, 225, 240);
+}
+.btn-wrap > button.btn-type02.btn-input-cancel {
+  background-color: rgb(251, 238, 237);
+  color: rgb(217, 100, 81);
+}
+.btn-wrap > button.btn-type02.btn-input-cancel:hover {
+  background-color: rgb(242, 220, 218);
+}
+
 .input-wrap > label {
   display: block;
 }
 input[type="text"],
 input[type="tel"],
 input[type="password"] {
-  width: 100%;
+  /* width: 100%; */
   border: none;
   background-color: #f2f5f8;
   line-height: 44px;
@@ -420,7 +435,7 @@ h2.page-title {
 }
 .input-wrap-content .content-title > h3 {
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 600;
   color: rgb(0, 55, 100);
 }
 
@@ -428,15 +443,18 @@ h2.page-title {
   padding: 0 14px;
 }
 .section-input-info .input-info-list {
-  padding: 24px 34px 24px;
-  background-color: #f2f5f8;
+  padding: 24px 74px 24px;
+  /* background-color: #f2f5f8; */
 }
 .section-input-info .input-info-list input {
   line-height: 36px;
   text-indent: 5px;
-  background-color: #fff;
+  width: auto;
+  margin-top: 4px;
+  /* background-color: #fff; */
 }
 .section-input-info .input-info-item {
+  padding-bottom: 24px;
   margin-bottom: 24px;
   font-size: 0;
 }
@@ -450,22 +468,67 @@ h2.page-title {
 }
 .section-input-info .input-info-item > .item-input-box {
   width: 75%;
-  /* font-size: 0; */
 }
 .section-input-info .input-info-item > .item-title {
-  width: 25%;
-  padding-left: 14px;
-  line-height: 44px;
+  position: relative;
+  width: calc(25% - 50px);
+  padding-left: 20px;
+  line-height: 40px;
+  background-color: rgb(42, 92, 133);
+  margin-right: 50px;
+  border-radius: 30px;
+  color: #fff;
 }
 .section-input-info .input-info-item > .item-title > .item-text {
-  font-weight: 600;
+  /* font-weight: 600; */
+}
+.section-input-info .input-info-item > .item-title > .item-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon/icon-arrow-toRight_fff.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.8;
+}
+
+.section-input-info .input-info-item.item-cummunity > .item-title {
+  cursor: pointer;
+}
+.section-input-info .input-info-item.item-cummunity > .item-title:hover {
+  background-color: rgb(0, 55, 100);
+}
+.section-input-info .input-info-item.item-cummunity > .item-title > .item-icon {
+  background-image: url("../img/icon/icon-closed.svg");
+  opacity: 0.8;
+  cursor: pointer;
+}
+.section-input-info
+  .input-info-item.item-cummunity
+  > .item-title:hover
+  > .item-icon {
+  opacity: 1;
+}
+.section-input-info .input-info-item.item-cummunity > .item-title.now-on {
+  background-color: rgb(0, 55, 100);
+}
+.section-input-info
+  .input-info-item.item-cummunity
+  > .item-title.now-on
+  > .item-icon {
+  transform: translateY(-50%) rotate(180deg);
 }
 .section-input-info .input-info-item .input-wrap {
-  display: inline-block;
-  width: 75%;
-  margin-bottom: 14px;
+  /* display: inline-block; */
+  display: block;
+  /* width: 75%; */
+  margin-bottom: 24px;
   font-size: 16px;
-  vertical-align: top;
+  /* vertical-align: top; */
 }
 .section-input-info .input-info-item .input-wrap:last-child {
   margin-bottom: 0;
@@ -480,33 +543,101 @@ h2.page-title {
   /* width: 80%; */
 }
 .section-input-info .input-info-item .input-wrap > .input-item-url input {
-  width: auto;
+  /* width: auto;
+  margin-top: 4px; */
 }
 .section-input-info .input-info-item .input-wrap > .input-item-url label {
   line-height: 44px;
 }
-.section-input-info .input-info-item .input-wrap > .btn-wrap > * {
-  display: inline-block;
-  /* width: 20%; */
+.section-input-info .input-info-item .input-wrap > .input-item-name {
+  margin-left: 14px;
+}
+.section-input-info
+  .input-info-item
+  .input-wrap
+  > .input-item-name
+  .input-item-title {
+  margin-left: 8px;
+}
+.section-input-info .input-info-item .input-wrap > .input-item-name label {
+  line-height: 44px;
+}
+.section-input-info .usr-community-content .input-info-item .btn-wrap {
+  vertical-align: bottom;
+}
+
+.section-input-info .input-info-item .btn-wrap {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  /* width: 100px; */
+  height: 44px;
+  /* margin-left: 8px; */
+}
+.section-input-info .input-info-item .btn-wrap > .btn-text {
+  /* display: inline-block; */
+  display: none;
+  line-height: 44px;
+  font-size: 15px;
+}
+.section-input-info .input-info-item .btn-wrap > .add-btn {
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/icon/icon-plus_nv_wh.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
   text-indent: -99999px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.section-input-info .input-info-item .btn-wrap > .add-btn:hover {
+  opacity: 1;
 }
 .section-input-info .input-info-item .input-wrap .input-item-title {
   display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-size: 15px;
+  color: #666;
 }
 .section-input-info .input-info-item .input-wrap .input-attention {
   display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: rgb(123, 165, 199);
 }
 
 /** INPUTTEST page **/
 .input-commu-box .input-info-table,
 .list-commu-box .input-info-table {
-  padding: 24px 34px 24px;
-  background-color: #f2f5f8;
+  padding: 24px 74px 24px;
+  /* background-color: #f2f5f8; */
 }
 
-.input-commu-box input,
+.content-box.input-commu-box {
+  display: none;
+}
+.content-box.input-commu-box.now-on {
+  display: block;
+}
+
+.input-commu-box input {
+  width: 80%;
+  /* background-color: #fff; */
+}
+.input-commu-box textarea {
+  width: 100%;
+}
+.input-commu-box input[type="date"] {
+  width: auto;
+  line-height: 44px;
+  padding: 0 24px 0 14px;
+  border: none;
+  background-color: #f2f5f8;
+}
 .input-commu-box select {
-  background-color: #fff;
+  margin-bottom: 14px;
 }
 
 .input-info-table .table-content {
@@ -523,8 +654,15 @@ h2.page-title {
 }
 .input-info-table .table-content tbody th,
 .input-info-table .table-content tbody td {
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.input-info-table .btn-wrap {
+  text-align: right;
+}
+.input-info-table .btn-wrap > .btn {
+  margin-right: 0;
 }
 
 /** SUBMIT page **/
