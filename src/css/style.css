@@ -479,9 +479,6 @@ h2.page-title {
   border-radius: 30px;
   color: #fff;
 }
-.section-input-info .input-info-item > .item-title > .item-text {
-  /* font-weight: 600; */
-}
 .section-input-info .input-info-item > .item-title > .item-icon {
   position: absolute;
   top: 50%;
@@ -552,6 +549,9 @@ h2.page-title {
 .section-input-info .input-info-item .input-wrap > .input-item-name {
   margin-left: 14px;
 }
+.section-input-info .input-info-item .input-wrap > .input-item-name input {
+  max-width: 160px;
+}
 .section-input-info
   .input-info-item
   .input-wrap
@@ -570,12 +570,9 @@ h2.page-title {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  /* width: 100px; */
   height: 44px;
-  /* margin-left: 8px; */
 }
 .section-input-info .input-info-item .btn-wrap > .btn-text {
-  /* display: inline-block; */
   display: none;
   line-height: 44px;
   font-size: 15px;
@@ -635,8 +632,6 @@ h2.page-title {
 .content-box.input-commu-box h4.table-attention {
   margin-left: 25%;
 }
-.content-box.input-commu-box h4.table-title {
-}
 .content-box.input-commu-box.now-on {
   display: block;
 }
@@ -644,6 +639,10 @@ h2.page-title {
 .input-commu-box input {
   width: 80%;
   /* background-color: #fff; */
+  font-size: 15px;
+}
+.input-commu-box select {
+  font-size: 15px;
 }
 .input-commu-box textarea {
   width: 100%;
@@ -669,7 +668,7 @@ h2.page-title {
   text-align: right;
   vertical-align: top;
   line-height: 44px;
-  font-size: 16px;
+  font-size: 14px;
 }
 .input-info-table .table-content tbody th,
 .input-info-table .table-content tbody td {
@@ -685,41 +684,66 @@ h2.page-title {
 }
 
 .table-added-list {
-  width: calc(100% + 80px);
-  margin-left: -40px;
+  table-layout: fixed;
+  /* width: calc(100% + 80px); */
+  width: 100%;
+  /* margin-left: -40px; */
 }
 .table-added-list thead {
   background-color: #edeff1;
   font-size: 14px;
-  /* font-weight: 600; */
   color: #666;
   text-align: center;
 }
 .table-added-list thead th {
   height: 34px;
   vertical-align: middle;
+  font-size: 14px;
 }
 .table-added-list tbody th,
-.table-added-list tbody td {
+.table-added-list tbody td,
+.table-added-list thead th {
   height: 38px;
   vertical-align: middle;
   border: 1px solid #edeff1;
-  font-size: 14px;
 }
 .table-added-list tbody th {
-  width: 44px;
+  /* width: 4%; */
+  font-size: 13px;
 }
 .table-added-list tbody td {
-  white-space: inherit;
+  padding: 0 5px;
+  white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 13px;
+  color: #555;
 }
-.table-added-list tbody tr td:first-of-type {
+.table-added-list tbody td:first-of-type {
   /* 사이트명 */
-  width: 110px;
+  /* width: 10%; */
+  text-align: center;
 }
-.table-added-list tbody tr td:nth-of-type(3) {
+.table-added-list tbody td:nth-of-type(2),
+.table-added-list thead th:nth-of-type(3) {
+  /* 게시글URL */
+  /* width: 16%; */
+}
+.table-added-list tbody td:nth-of-type(3) {
   /* 작성자명 */
-  width: 110px;
+  /* width: 12%; */
+  text-align: center;
+}
+.table-added-list tbody td:nth-of-type(4) {
+  /* 작성일 */
+  /* width: 12%; */
+  text-align: center;
+}
+.table-added-list tbody td:nth-of-type(5) {
+  /* width: 16%; */
+}
+.table-added-list tbody td:nth-of-type(6) {
+  /* width: 30%; */
 }
 
 .input-info-table .pagination-list {
@@ -735,19 +759,44 @@ h2.page-title {
 }
 .input-info-table .pagination-list > li > button {
   background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
 .input-info-table .pagination-list > li.page-arrow > button {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   text-indent: -99999px;
   background-image: url("../img/icon/icon-arrow_next.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  /* border-radius: 50%; */
 }
 .input-info-table .pagination-list > li.page-arrow.page-prev > button {
   transform: rotate(180deg);
+}
+.input-info-table .pagination-list > li.page-arrow.disable > button {
+  cursor: auto;
+  opacity: 0.1;
+}
+
+.input-info-table .pagination-list .page-count {
+  position: relative;
+  font-size: 14px;
+  color: #aaa;
+}
+.input-info-table .pagination-list .page-count.now-on {
+  font-weight: 600;
+  color: #555;
+}
+.input-info-table .pagination-list .page-count.now-on::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 1px;
+  background-color: #555;
 }
 
 /** SUBMIT page **/
@@ -760,7 +809,6 @@ h2.page-title {
   padding: 24px 0 24px;
   line-height: 1.8;
   font-size: 18px;
-  /* font-weight: 600; */
 }
 .corpus-submit .info-wrap-content {
   padding: 34px 0 24px;
