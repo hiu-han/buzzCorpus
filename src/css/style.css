@@ -93,6 +93,8 @@ select {
 
 /** WRAP **/
 #wrap {
+  width: 100%;
+  overflow: hidden;
 }
 
 /** HEADER **/
