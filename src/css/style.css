@@ -17,9 +17,9 @@
 }
 .center {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
+  width: 1024px;
   max-width: 1024px;
-  /* min-width: ; */
   margin: 0 auto;
 }
 
@@ -94,7 +94,6 @@ select {
 /** WRAP **/
 #wrap {
   width: 100%;
-  overflow: hidden;
 }
 
 /** HEADER **/
@@ -589,6 +588,7 @@ h2.page-title {
   text-indent: -99999px;
   opacity: 0.8;
   cursor: pointer;
+  overflow: hidden;
 }
 .section-input-info .input-info-item .btn-wrap > .add-btn:hover {
   opacity: 1;
@@ -771,6 +771,7 @@ h2.page-title {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  overflow: hidden;
 }
 .input-info-table .pagination-list > li.page-arrow.page-prev > button {
   transform: rotate(180deg);
