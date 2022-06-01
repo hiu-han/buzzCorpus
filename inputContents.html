@@ -35,7 +35,7 @@
             <div class="info-wrap info-wrap-input-info">
               <div class="info-wrap-top">
                 <p>귀하께서 언어 자원 구축 사업에 참여할 SNS 계정 및 카페·커뮤니티 게시글을 모두 기재하여 주십시오.</p>
-                <span class="add-comment">※ 반드시 <strong>본인 명의</strong>로 작성한 계정과 게시글로 참여해주십시오</span>
+                <span class="add-comment">※ 반드시 <strong>본인 명의</strong>로 작성한 계정과 게시글로 참여해 주십시오</span>
               </div>
 
               <!-- 내 SNS로 참여하기 -->
@@ -119,7 +119,7 @@
                           </div>
                           <div class="input-wrap input-blog-daum">
                             <p class="input-item-url blog-daum-url">
-                              <label class="label-text">blog.daum.com/</label>
+                              <label class="label-text">blog.daum.net/</label>
                               <input type="text">
                             </p>
                           </div>
@@ -167,13 +167,13 @@
                               <p class="add-btn">+</p>
                               <span class="btn-text">가입카페 추가하기</span>
                             </div>
-                            <span class="input-attention">실제로 위의 카페에서 본인이 작성한 글만 검색되는지 반드시 확인하신 후 입력해주세요.</span>
+                            <span class="input-attention">실제로 위의 카페에서 본인이 작성한 글만 검색되는지 반드시 확인하신 후 입력해 주세요.</span>
                           </div>
                           <!-- 다음카페 -->
                           <div class="input-wrap input-cafe-daum">
                             <p class="input-item-url cafe-daum-url">
                               <span class="input-item-title">다음카페</span>
-                              <label for="" class="label-text">cafe.daum.com/</label>
+                              <label for="" class="label-text">cafe.daum.net/</label>
                               <input type="text" id="">
                             </p>
                             <p class="input-item-name cafe-daum-name">
@@ -185,7 +185,7 @@
                               <p class="add-btn">+</p>
                               <span class="btn-text">가입카페 추가하기</span>
                             </div>
-                            <span class="input-attention">실제로 위의 카페에서 본인이 작성한 글만 검색되는지 반드시 확인하신 후 입력해주세요.</span>
+                            <span class="input-attention">실제로 위의 카페에서 본인이 작성한 글만 검색되는지 반드시 확인하신 후 입력해 주세요.</span>
                           </div>
                         </div>
                       </li>
@@ -204,27 +204,29 @@
                   <div class="content-box">
                     <ul class="input-info-list">
                       <li class="input-info-item item-cummunity">
-                        <div class="item-title now-on">
+                        <div class="item-title directInputClicker">
                           <p class="item-icon"></p>
                           <span class="item-text">기타 커뮤니티</span>
                         </div>
                         <div class="item-input-box">
                           <!-- 기타 커뮤니티에 관하여 -->
                           <div class="input-wrap input-community-all">
-                            <span class="input-attention">카페 이외 사이트는 <strong>직접 게시글 입력</strong>을 부탁드립니다.</span>
+                            <span class="input-attention">카페 이외 사이트는 <strong class="directInputClicker"
+                                style="cursor:pointer;">직접 게시글 입력</strong>을 부탁드립니다.</span>
                             <!-- <p class="text-page-link" id="goInputBox"><a href="./index.html">다른커뮤니티로 참여하기</a></p> -->
                             <span class="input-attention">디시인사이드, 에펨코리아, 뽐뿌, 인벤, 더쿠, 루리웹, 엠엘비파크, 웃긴대학, 네이트판, 보배드림, 이토랜트,
-                              SLR클럽, 82cook, 오늘의 유머, 인스티즈 등의 커뮤니티에 작성하신 게시글을 입력해주세요!</span>
+                              SLR클럽, 82cook, 오늘의 유머, 인스티즈 등의 커뮤니티에 작성하신 게시글을 입력해 주세요!</span>
                           </div>
                         </div>
                       </li>
                     </ul>
                   </div>
 
-                  <div class="content-box input-commu-box now-on">
+                  <!-- <div class="content-box input-commu-box now-on"> -->
+                  <div class="content-box input-commu-box" id="directInputCommu">
                     <!-- 게시글 입력 -->
                     <div class="input-info-table">
-                      <h4 class="table-attention">※ 참여하실 사이트의 게시글별로 내용을 입력해주십시오.</h4>
+                      <h4 class="table-attention">※ 참여하실 사이트의 게시글별로 내용을 입력해 주십시오.</h4>
                       <table class="table-content">
                         <tbody>
                           <tr>
@@ -255,7 +257,7 @@
                               </div>
                               <!-- .input-text-commu >> 위의 selectbox에서 '기타(직접입력)'을 선택한 경우 >> .addClass '.now-on'으로 활성화 할 예정 -->
                               <div class="input-wrap input-text-wrap input-text-commu">
-                                <input type="text" id="inputCommuName" placeholder="커뮤니티의 이름을 입력해주세요.">
+                                <input type="text" id="inputCommuName" placeholder="커뮤니티의 이름을 입력해 주세요.">
                               </div>
                             </td>
                           </tr>
@@ -263,7 +265,7 @@
                             <th>게시글 URL</th>
                             <td class="table-input input-post-url">
                               <div class="input-wrap input-text-wrap input-text-post">
-                                <input type="text" id="inputPostUrl" placeholder="해당 게시글의 주소를 입력해주세요.">
+                                <input type="text" id="inputPostUrl" placeholder="해당 게시글의 주소를 입력해 주세요.">
                               </div>
                             </td>
                           </tr>
@@ -271,7 +273,7 @@
                             <th>작성자명</th>
                             <td class="table-input input-usr-name">
                               <div class="input-wrap input-text-wrap input-text-usr">
-                                <input type="text" id="iputUsrName" placeholder="커뮤니티 내의 작성자명을 입력해주세요.">
+                                <input type="text" id="iputUsrName" placeholder="커뮤니티 내의 작성자명을 입력해 주세요.">
                               </div>
                             </td>
                           </tr>
@@ -287,7 +289,7 @@
                             <th>제목</th>
                             <td class="table-input input-post-title">
                               <div class="input-wrap input-text-wrap input-text-title">
-                                <input type="text" id="inputPostTitle" placeholder="제목을 입력해주세요.">
+                                <input type="text" id="inputPostTitle" placeholder="제목을 입력해 주세요.">
                               </div>
                             </td>
                           </tr>
@@ -421,6 +423,7 @@
 
   <script src='./src/js/jquery-3.5.1.js'></script>
   <script src="./src/js/include.js"></script>
+  <script src="./src/js/main.js"></script>
 
 </body>
 
