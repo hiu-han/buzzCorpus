@@ -96,14 +96,54 @@ select {
 /** HEADER **/
 header {
   position: relative;
-  padding: 0 14px;
 }
 .header-inner {
-  text-align: right;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
 }
 h1.logo {
   width: 140px;
-  margin-top: 14px;
+}
+
+.gnb-user-area .gnb-user-box {
+  display: inline-block;
+  text-align: right;
+  font-size: 15px;
+}
+.gnb-user-area.now-on .gnb-login-box {
+  display: none;
+}
+
+.gnb-user-area .gnb-my-namebox {
+  display: none;
+}
+.gnb-user-area.now-on .gnb-my-namebox {
+  display: inline-block;
+}
+
+.gnb-user-area .gnb-user-box > p {
+  display: inline-block;
+}
+.gnb-my-namebox > .my-name {
+  margin-right: 20px;
+}
+.gnb-my-namebox > .my-name > span {
+  display: inline-block;
+  margin-right: 4px;
+  font-weight: 600;
+}
+.gnb-login-box > .btn-login,
+.gnb-my-namebox > .btn-logout {
+  position: relative;
+  font-weight: 600;
+  color: #888;
+}
+.gnb-login-box > .btn-login:hover,
+.gnb-my-namebox > .btn-logout:hover {
+  color: #313131;
 }
 
 /** MAIN **/
@@ -644,6 +684,16 @@ h2.page-title {
 }
 .input-commu-box select {
   margin-bottom: 14px;
+}
+
+.input-commu-box .input-commu-name .input-select-commu,
+.input-commu-box .input-commu-name .input-text-commu {
+  display: inline-block;
+  vertical-align: top;
+}
+.input-commu-box .input-commu-name .input-text-commu {
+  width: 300px;
+  margin-left: 14px;
 }
 
 .input-info-table .table-content {
