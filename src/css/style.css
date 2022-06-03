@@ -776,6 +776,23 @@ h2.page-title {
 .table-added-list tbody td:nth-of-type(6) {
 }
 
+.added-post-modify .btn-modify {
+  width: 24px;
+  height: 24px;
+  margin-left: 1px;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url("../img/icon/icon-edit.svg");
+  background-position: center;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  text-indent: -99999px;
+  cursor: pointer;
+  transition: 0.25s ease-in;
+}
+.added-post-modify:hover .btn-modify {
+  background-image: url("../img/icon/icon-edit_rd.svg");
+}
+
 .input-info-table .pagination-list {
   margin-top: 24px;
   text-align: center;
@@ -853,7 +870,7 @@ h2.page-title {
 .corpus-submit .submit-agreement-wrap .end-comment {
   margin-top: 14px;
   font-size: 14px;
-  color: rgb(217, 100, 81);
+  color: #d96451;
 }
 
 /** FOOTER **/
