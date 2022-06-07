@@ -15,3 +15,141 @@
     </div>
   </div>
 </footer>
+
+<div id="fixedGroup">
+</div>
+
+<div id="modalGroup">
+  <section class="modal-section modalOn" id="corpusModal">
+    <div class="modal-bg"></div>
+    <div class="modal-wrap">
+      <div class="modal-inner">
+        <div class="modal-header">
+          <div class="modal-header-top">
+            <div class="logo-box"><img src="./src/img/common/logo.svg" alt=""></div>
+            <div class="modal-cls" id="corpusModalCls">
+              <button class="btn btn-cls">확인</button>
+            </div>
+          </div>
+          <div class="modal-title">
+            <h3>국립국어원 국어 말뭉치 구축사업 수행 기관 선정 안내</h3>
+          </div>
+        </div>
+
+        <div class="modal-content modal-corpus-content">
+          <div class="para-wrap para-wrap-01">
+            <div class="para-title">
+              <h4>국어 말뭉치 구축사업 개요</h4>
+            </div>
+            <ul class="para-subs">
+              <li class="para-content">
+                <h5>추진배경</h5>
+                <div class="para-text-box">
+                  <span class="para-text">인공지능 산업 발전을 위한 대규모 고품질 우리말 자원 수요 증대</span>
+                </div>
+              </li>
+              <li class="para-content">
+                <h5>목적 및 필요성</h5>
+                <div class="para-text-box">
+                  <span class="para-text">4차 산업혁명 대비 기반 기술 개발 및 인공지능 기술 개발, 활용을 위한 대규모 말뭉치 구축으로 국어 자원의 활용도와 가치 제고</span>
+                </div>
+              </li>
+              <li class="para-content">
+                <h5>기대효과</h5>
+                <div class="para-text-box">
+                  <span class="para-text">민간 공유를 통해 언어 인공지능 등 관련 산업을 위한 기반 마련</span>
+                  <span class="para-text">국어 및 국어문화 연구, 국어정책 수립의 기초 자료로 활용</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="para-wrap para-wrap-02">
+            <div class="para-title">
+              <h4>버즈메트릭스 수행 사업 내용</h4>
+            </div>
+            <ul class="para-subs">
+              <li class="para-content">
+                <div class="para-text-box">
+                  <span class="para-text"><strong>(주)버즈메트릭스</strong>는 국립국어원 <strong>"2022년 온라인 게시 자료 수집 및 정제",
+                      "2022년 말뭉치 감정 분석 및 연구 사업"의 수행 기관</strong>으로
+                    선정되어 해당 사업을 추진하고
+                    있습니다.</span><br>
+                  <span class="para-text">SNS(트위터, 인스타그램, 페이스북), 커뮤니티 사이트에 게시글을 작성하신 분들의 참여를 기다리고 있으니, 수행 사업에 대한
+                    많은 관심과
+                    참여
+                    부탁드립니다.</span>
+                </div>
+              </li>
+              <li class="para-content">
+                <!-- <h5>국립국어원 홈페이지 내 관련 사업 안내</h5> -->
+                <h5>국립국어원 2022년 온라인 게시 자료 수집 및 정제 사업 관련 안내</h5>
+                <div class="para-text-box para-text-link">
+                  <!-- <span class="para-text">국립국어원 2022년 온라인 게시 자료 수집 및 정제 사업 관련 안내</span> -->
+                  <span class="para-text-title">바로가기</span>
+                  <span class="para-text link-area"><a
+                      href="https://www.korean.go.kr/front/board/boardStandardView.do?board_id=4&mn_id=182&b_seq=2755">https://www.korean.go.kr/front/board/boardStandardView.do?board_id=4&mn_id=182&b_seq=2755</a></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <div class="footer-text-box">
+            <span class="footer-text">
+              본 사업 참여는 <strong>2022년 6월부터 11월까지</strong> 진행될 예정입니다.<br>
+              사업 추진과 관련하여 문의 사항이나 참여 의향이 있으시면, <strong>담당자에게 문의해주시기 바랍니다.</strong>
+            </span>
+          </div>
+
+          <address class="contact-us">
+            <h5>말뭉치 구축 사업 담당자 및 연락처</h5>
+            <div class="contact-info-wrap">
+              <p class="contact-info contact-tel-wrap">
+                <span class="contact-info-name">tel</span>
+                <span class="contact-info-subs contact-tel">02-6244-0770</span>
+              </p>
+              <p class="contact-info contact-email-wrap">
+                <span class="contact-info-name">email</span>
+                <span class="contact-info-subs contact-email">jhyoo1@metrix.co.kr</span>
+              </p>
+            </div>
+          </address>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+
+  const $corpusModal = document.querySelector("#corpusModal"),
+    $corpusCls = document.querySelector("#corpusModalCls");
+  $corpusModalBg = document.querySelector(".modal-bg");
+  const MODALON_CLASSNAME = "modalOn";
+
+  $corpusModalBg.addEventListener('mousewheel', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    return false;
+  });
+
+  $corpusCls.addEventListener('click', () => {
+    $corpusModal.classList.remove('modalOn');
+
+    $corpusModalBg.addEventListener('mousewheel', (e) => {
+      return true;
+    });
+  })
+
+  $corpusModalBg.addEventListener('click', () => {
+    $corpusModal.classList.remove('modalOn');
+
+    $corpusModalBg.addEventListener('mousewheel', (e) => {
+      return true;
+    });
+  })
+
+</script>
