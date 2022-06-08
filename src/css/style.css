@@ -910,7 +910,7 @@ h2.page-title {
   overflow: hidden;
 }
 #corpusModal.modalOn {
-  display: block;
+  /* display: block; */
 }
 #corpusModal > .modal-bg {
   position: absolute;
@@ -927,13 +927,13 @@ h2.page-title {
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
-  width: 640px;
+  width: 580px;
   height: auto;
   padding: 24px;
   line-height: 1.5;
   background-color: #fff;
   box-shadow: 1px 3px 12px rgba(80, 80, 80, 0.1);
-  font-size: 16px;
+  font-size: 15px;
   z-index: 320;
 }
 
@@ -970,7 +970,7 @@ h2.page-title {
 }
 
 .modal-content .para-wrap {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .modal-content .para-wrap:last-child {
   margin-bottom: 0;
@@ -978,7 +978,7 @@ h2.page-title {
 .para-wrap .para-title {
   display: inline-block;
   padding: 0px 16px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   border-radius: 30px;
   background-color: rgb(42, 92, 133);
 }
@@ -1052,14 +1052,18 @@ h2.page-title {
   font-weight: 700;
   white-space: nowrap;
 }
+.para-wrap .para-text-link .link-area > a {
+  color: #3b74a9;
+  text-decoration: underline;
+}
 
 .modal-footer {
-  padding: 20px 14px;
+  padding: 20px 20px;
   margin-top: 30px;
   background-color: #f3f5f8;
 }
 .modal-footer > .footer-text-box,
-.modal-footer > address {
+.modal-footer > .contact-us {
   padding-left: 14px;
 }
 .modal-footer > .footer-text-box > .footer-text {
@@ -1073,20 +1077,32 @@ h2.page-title {
   left: -14px;
 }
 
-.modal-footer > address {
+.modal-footer > .contact-us {
   display: flex;
   flex-wrap: nowrap;
   justify-content: left;
   gap: 20px;
   margin-top: 14px;
 }
-.modal-footer > address > h5 {
+.modal-footer > .contact-us > h5 {
+  font-weight: 600;
+}
+.modal-footer > .contact-us .contact-info > .contact-info-name {
+  display: inline-block;
+  width: 38px;
+  margin-right: 8px;
   font-weight: 600;
 }
 
 @media all and (max-width: 640px) {
   #corpusModal > .modal-wrap {
+    width: 400px;
+  }
+  #corpusModal > .modal-wrap .modal-inner {
     width: 100%;
-    /* min-width: 360px; */
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 }
