@@ -96,6 +96,7 @@ select {
 /** HEADER **/
 header {
   position: relative;
+  padding-top: 24px;
 }
 .header-inner {
   display: flex;
